@@ -1,4 +1,4 @@
-package Packs;
+package com.example.bippsqr2.SRS.Peta2;
 trackpack.quarter2;
 
 import org.junit.Test;
@@ -18,6 +18,8 @@ public class Ching {
         System.out.println("If I could, I would eat " + favFood + " every single day ");
     }
 
+    public static class Setting {
+    }
 }
 
 
