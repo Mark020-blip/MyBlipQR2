@@ -1,4 +1,4 @@
-package com.example.bippsqr2;
+package peta2;
 
 public class rainminipeta2 import org.junit.Test;
 

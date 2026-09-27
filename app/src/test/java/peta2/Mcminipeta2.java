@@ -1,13 +1,13 @@
-package com.example.bippsqr2;
+package peta2;
 import org.junit.Test;
-public class Alfonsominipeta2 {
+public class Mcminipeta2 {
 
     @Test
     public void printMyProfile() {
-        String myName = "Jahred Alfonso";
-        String petName = "Uno";
-        String favFood = "burger";
-        int myAge = 17;
+        String myName = "Mc Farell";
+        String petName = "Moon";
+        String favFood = "burger steak";
+        int myAge = 18;
 
 
         System.out.println("--- MY DIGITAL PROFILE ---");
