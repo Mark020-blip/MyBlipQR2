@@ -1,4 +1,4 @@
-package com.example.bippsqr2.SRS.Peta;
+package Otto;
 
 import java.util.Scanner;
 
