@@ -1,4 +1,4 @@
-package com.example.bippsqr2.SRS.Peta2;
+package com.example.bippsqr2.SRS.Peta;
 trackpack.quarter2;
 
 import org.junit.Test;

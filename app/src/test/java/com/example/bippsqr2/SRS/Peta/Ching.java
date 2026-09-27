@@ -1,4 +1,4 @@
-package PracticalExam;
+package com.example.bippsqr2.SRS.Peta;
 
 import java.util.Scanner;
 
