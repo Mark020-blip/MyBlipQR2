@@ -24,7 +24,7 @@
 
         <!-- Full Name Input -->
         <EditText
-            android:id="@+id/etStudentName"
+            android:id="@+id/StudentName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
@@ -36,7 +36,7 @@
 
         <!-- Student ID Input -->
         <EditText
-            android:id="@+id/etStudentID"
+            android:id="@+id/StudentID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
@@ -48,7 +48,7 @@
 
         <!-- Major / Course Input -->
         <EditText
-            android:id="@+id/etMajor"
+            android:id="@+id/Section"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
@@ -60,7 +60,7 @@
 
         <!-- Date Input -->
         <EditText
-            android:id="@+id/etDate"
+            android:id="@+id/Date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
@@ -72,7 +72,7 @@
 
         <!-- Check-In Time Input -->
         <EditText
-            android:id="@+id/etCheckInTime"
+            android:id="@+id/CheckInTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
@@ -84,7 +84,7 @@
 
         <!-- Attendance Status Input -->
         <EditText
-            android:id="@+id/etAttendanceStatus"
+            android:id="@+id/AttendanceStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
