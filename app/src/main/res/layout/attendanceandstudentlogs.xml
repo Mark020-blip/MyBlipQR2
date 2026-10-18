@@ -18,39 +18,40 @@
         android:id="@+id/editTextText15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_margin="16dp"
+        android:autofillHints="personName"
         android:hint="@string/enter_full_name"
-        android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
+        android:textColor="#000000"
         android:textColorHint="#00796B"
-        tools:ignore="VisualLintTextFieldSize" />
+        android:textColorLink="#000000"
+        tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextText16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints="username"
         android:ems="10"
         android:hint="@string/enter_student_id"
         android:inputType="text"
         android:minHeight="48dp"
-        tools:ignore="Autofill,VisualLintTextFieldSize" />
+        android:textColor="#000000"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/editTextText17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:autofillHints=""
+        android:autofillHints="postalAddress"
         android:ems="10"
         android:hint="@string/enter_section"
-        android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
-        android:textColorLink="#00796B"
+        android:textColor="#000000"
         tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
@@ -58,16 +59,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/enter_status"
         android:inputType="text"
         android:minHeight="48dp"
-        tools:ignore="Autofill,VisualLintTextFieldSize" />
+        android:textColor="#000000"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="332dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="16dp"
         android:layout_marginTop="24dp"
         android:text="@string/submit_log"
