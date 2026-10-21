@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Bippsqr2</string>
+    <string name="submit_log">SUBMIT LOG</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_student_id">Enter Student ID</string>
+    <string name="enter_section">Enter Section</string>
+    <string name="enter_status">Enter Status</string>
+    <string name="attendance_logs">Attendance Logs</string>
 </resources>
