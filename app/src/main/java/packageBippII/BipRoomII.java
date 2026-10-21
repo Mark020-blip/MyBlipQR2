@@ -1,4 +1,4 @@
-package packageBipp2;
+package packageBippII;
 
 import android.os.Bundle;
 
@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.bippsqr2.R;
 
-public class BipRoom2 extends AppCompatActivity {
+public class BipRoomII extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
