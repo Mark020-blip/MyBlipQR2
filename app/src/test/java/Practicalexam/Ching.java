@@ -1,4 +1,4 @@
-package Otto;
+package Practicalexam;
 
 import java.util.Scanner;
 
