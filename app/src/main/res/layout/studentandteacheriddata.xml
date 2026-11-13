@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="20dp">
+
+        <!-- Institution Header -->
+        <TextView
+            android:id="@+id/tvInstitutionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MANILA CATHEDRAL SCHOOL"
+            android:textColor="#3F51B5"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ID Type Badge (Student / Teacher) -->
+        <TextView
+            android:id="@+id/tvIdType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="STUDENT IDENTITY CARD"
+            android:textColor="#757575"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInstitutionName" />
+
+        <!-- Profile Photo Placeholder -->
+        <ImageView
+            android:id="@+id/ivProfilePhoto"
+            android:layout_width="90dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            android:background="#E0E0E0"
+            android:contentDescription="Profile Photo"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvIdType" />
+
+        <!-- Name Label & Value -->
+        <TextView
+            android:id="@+id/tvNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Name:"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/ivProfilePhoto"
+            app:layout_constraintTop_toTopOf="@id/ivProfilePhoto" />
+
+        <TextView
+            android:id="@+id/tvNameValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="DYREMS RAIN Z. ,ENDOZA"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvNameLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvNameLabel" />
+
+        <!-- ID Number Label & Value -->
+        <TextView
+            android:id="@+id/tvIdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ID Number:"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/tvNameValue"
+            app:layout_constraintTop_toBottomOf="@id/tvNameValue" />
+
+        <TextView
+            android:id="@+id/tvIdValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MCS-2026-2027"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvIdLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvIdLabel" />
+
+        <!-- Department / Major Label & Value -->
+        <TextView
+            android:id="@+id/tvDetailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Major / Department:"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/tvIdValue"
+            app:layout_constraintTop_toBottomOf="@id/tvIdValue" />
+
+        <TextView
+            android:id="@+id/tvDetailValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TVL-ICT"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvDetailLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailLabel" />
+
+        <!-- Divider Line -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#E0E0E0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivProfilePhoto" />
+
+        <!-- Action Button 1: QR Code / Barcode -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewQr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="View QR"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toStartOf="@id/btnEditProfile"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <!-- Action Button 2: Edit Details -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditProfile"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Edit Details"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/btnViewQr"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
