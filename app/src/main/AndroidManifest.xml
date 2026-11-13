@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bippsqr2">
         <activity
+            android:name="BippRoom2.BippsRoom2"
+            android:exported="false" />
+        <activity
             android:name="packageBipp.BipRoom"
             android:exported="false" />
         <activity
