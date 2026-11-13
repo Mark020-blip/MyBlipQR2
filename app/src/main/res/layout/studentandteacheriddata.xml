@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
@@ -68,7 +69,7 @@
             android:id="@+id/tvNameValue"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="DYREMS RAIN Z. ,ENDOZA"
+            android:text="DYREMS RAIN Z. MENDOZA"
             android:textColor="#212121"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -123,25 +124,38 @@
             app:layout_constraintStart_toStartOf="@id/tvDetailLabel"
             app:layout_constraintTop_toBottomOf="@id/tvDetailLabel" />
 
+        <!-- Embedded QR Code Section -->
+        <ImageView
+            android:id="@+id/ivCardQrCode"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Student QR Code"
+            android:src="@drawable/ic_qr_code_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivProfilePhoto" />
+
         <!-- Divider Line -->
         <View
             android:id="@+id/divider"
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:background="#E0E0E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivProfilePhoto" />
+            app:layout_constraintTop_toBottomOf="@id/ivCardQrCode" />
 
-        <!-- Action Button 1: QR Code / Barcode -->
+        <!-- Action Button 1: Full View QR -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnViewQr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="View QR"
+            android:backgroundTint="#1E88E5"
+            android:text="View Full QR"
             android:textSize="12sp"
             app:cornerRadius="8dp"
             app:layout_constraintEnd_toStartOf="@id/btnEditProfile"
