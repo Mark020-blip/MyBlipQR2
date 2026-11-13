@@ -1,4 +1,4 @@
-package BippRoom2;
+package BippRoom2_2;
 
 import android.os.Bundle;
 import android.widget.Button;
