@@ -9,63 +9,35 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText studentName, studentID, section;
-    EditText date, checkInTime, attendanceStatus;
-    Button btnSubmitCheckIn;
+    EditText etFullName, etStudentID, etSection, etStatus;
+    Button btnSubmitLog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.attendancecheckindata);
+        // Display attendanceandstudentlogs.xml
+        setContentView(R.layout.attendanceandstudentlogs);
 
         // Connect XML elements
-        studentName = findViewById(R.id.StudentName);
-        studentID = findViewById(R.id.StudentID);
-        section = findViewById(R.id.Section);
-        date = findViewById(R.id.Date);
-        checkInTime = findViewById(R.id.CheckInTime);
-        attendanceStatus = findViewById(R.id.AttendanceStatus);
+        etFullName = findViewById(R.id.editTextText15);
+        etStudentID = findViewById(R.id.editTextText16);
+        etSection = findViewById(R.id.editTextText17);
+        etStatus = findViewById(R.id.editTextText18);
+        btnSubmitLog = findViewById(R.id.button);
 
-        btnSubmitCheckIn = findViewById(R.id.btnSubmitCheckIn);
+        // Submit Button Click Listener
+        btnSubmitLog.setOnClickListener(v -> {
+            String name = etFullName.getText().toString().trim();
+            String id = etStudentID.getText().toString().trim();
+            String section = etSection.getText().toString().trim();
+            String status = etStatus.getText().toString().trim();
 
-        // Submit Button
-        btnSubmitCheckIn.setOnClickListener(v -> {
-
-            String name = studentName.getText().toString().trim();
-            String id = studentID.getText().toString().trim();
-            String studentSection = section.getText().toString().trim();
-            String studentDate = date.getText().toString().trim();
-            String time = checkInTime.getText().toString().trim();
-            String status = attendanceStatus.getText().toString().trim();
-
-            // Check empty fields
-            if (name.isEmpty() || id.isEmpty() ||
-                    studentSection.isEmpty() ||
-                    studentDate.isEmpty() ||
-                    time.isEmpty() ||
-                    status.isEmpty()) {
-
-                Toast.makeText(this,
-                        "Please complete all fields!",
-                        Toast.LENGTH_SHORT).show();
+            if (name.isEmpty() || id.isEmpty() || section.isEmpty() || status.isEmpty()) {
+                Toast.makeText(this, "Please complete all fields!", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            // Check attendance status
-            if (!status.equalsIgnoreCase("Present") &&
-                    !status.equalsIgnoreCase("Absent") &&
-                    !status.equalsIgnoreCase("Late")) {
-
-                Toast.makeText(this,
-                        "Enter Present, Absent, or Late.",
-                        Toast.LENGTH_LONG).show();
-                return;
-            }
-
-            // Successful submission
-            Toast.makeText(this,
-                    "Attendance submitted successfully for " + name,
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Log submitted successfully for " + name, Toast.LENGTH_LONG).show();
         });
     }
 }

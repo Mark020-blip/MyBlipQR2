@@ -7,6 +7,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.bippsqr2.R;
+
 public class BippsRoom2 extends AppCompatActivity {
 
     @Override

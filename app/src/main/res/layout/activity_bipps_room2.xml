@@ -18,80 +18,74 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="59dp"></LinearLayout>
-
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="399dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="Name"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="87dp"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextText3"
-        />
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
 
     <EditText
         android:id="@+id/editTextText6"
-        android:layout_width="390dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="RoomNumber"
         android:inputType="text"
-        android:text="RoomNumber"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="155dp"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextText"
-        />
+        app:layout_constraintTop_toBottomOf="@id/editTextText" />
 
     <EditText
         android:id="@+id/editTextText7"
-        android:layout_width="382dp"
-        android:layout_height="46dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="buildingName"
         android:inputType="text"
-        android:text="buildingName"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="212dp"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextText6"
-        />
+        app:layout_constraintTop_toBottomOf="@id/editTextText6" />
 
     <EditText
         android:id="@+id/editTextText8"
-        android:layout_width="390dp"
-        android:layout_height="60dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="newStartTime"
         android:inputType="text"
-        android:text="newStartTime"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="265dp"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextText7"
-        />
+        app:layout_constraintTop_toBottomOf="@id/editTextText7" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Accept"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="404dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextText8"
-        />
+        app:layout_constraintTop_toBottomOf="@id/editTextText8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
