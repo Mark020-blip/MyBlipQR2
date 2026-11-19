@@ -1,24 +1,43 @@
 package com.example.bippsqr2;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    EditText etFullName, etStudentID, etSection, etStatus;
+    Button btnSubmitLog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.classscheduledata);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        // Display attendanceandstudentlogs.xml
+        setContentView(R.layout.attendanceandstudentlogs);
+
+        // Connect XML elements
+        etFullName = findViewById(R.id.editTextText15);
+        etStudentID = findViewById(R.id.editTextText16);
+        etSection = findViewById(R.id.editTextText17);
+        etStatus = findViewById(R.id.editTextText18);
+        btnSubmitLog = findViewById(R.id.button);
+
+        // Submit Button Click Listener
+        btnSubmitLog.setOnClickListener(v -> {
+            String name = etFullName.getText().toString().trim();
+            String id = etStudentID.getText().toString().trim();
+            String section = etSection.getText().toString().trim();
+            String status = etStatus.getText().toString().trim();
+
+            if (name.isEmpty() || id.isEmpty() || section.isEmpty() || status.isEmpty()) {
+                Toast.makeText(this, "Please complete all fields!", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            Toast.makeText(this, "Log submitted successfully for " + name, Toast.LENGTH_LONG).show();
         });
     }
 }
